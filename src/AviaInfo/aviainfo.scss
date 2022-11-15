@@ -1,0 +1,32 @@
+.aviainfo {
+  display: flex;
+  justify-content: center;
+  background: red;
+    &__container {
+      width: rem(1200);
+      background: blue;
+      display: flex;
+      justify-content: center;
+    }
+    &__card {
+      width: rem(980);
+      background: #FFFFFF;
+      box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+      border-radius: 15px;
+      display: flex;
+      margin-top: rem(71);
+    }
+    &__body {
+    }
+}
+.flight-plan {
+  display: flex;
+    &__departure-date {
+      display: flex;
+      flex-direction: column;
+    }
+    &__arrival-date {
+      display: flex;
+      flex-direction: column;
+    }
+}

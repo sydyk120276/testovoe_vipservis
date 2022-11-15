@@ -1,0 +1,114 @@
+
+.avia {
+  display: flex;
+  justify-content: center;
+  &__container {
+    width: rem(1200);
+    display: flex;
+    justify-content: center;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    margin-top: rem(68);
+    width: rem(962);
+    box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+    border-radius: rem(15);
+
+    &-inputs {
+      padding: rem(20) 0 rem(30) 0;
+      background: #5C87DB;
+      border-radius: rem(15) rem(15) 0 0;
+    }
+    &-button {
+      display: flex;
+      justify-content: end;
+      padding: rem(23) rem(29) rem(23) 0;
+        .button {
+          padding: rem(10) rem(32);
+          font-style: normal;
+          font-weight: 400;
+          font-size: rem(14);
+          line-height: rem(13);
+          color: #FFFFFF;
+          background: #5C87DB;
+          border-radius: 10px;
+          border: none;
+          cursor: pointer;
+          text-decoration: none;
+          &:hover {
+            background: #3E67B7;
+          }
+          &:active {
+            background: #2c519b;
+          }
+        }
+    }
+  }
+  .avia-inputs {
+    display: flex;
+    justify-content: center;
+    gap: rem(25);
+    span {
+      border: 1px dashed #FFFFFF;
+      transform: rotate(90deg);
+      margin: 0;
+    }
+    &__content {}
+    .content {
+      display: flex;
+      flex-direction: column;
+      &__title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: rem(11);
+        line-height: rem(13);
+        color: #FFFFFF;
+      }
+
+      &__input--sity-departure {
+      }
+      &__input--sity-arrival {
+      }
+      &__input--date-departure {
+      }
+      &__input--date-arrival {
+      }
+    }
+    input {
+      width: rem(196);
+      height: rem(40);
+      background: #FFFFFF;
+      border-radius: rem(10);
+      margin: 0;
+      padding: 0;
+      border: 1px solid #B7BAC1;
+      font-style: normal;
+      font-weight: 700;
+      font-size: rem(14);
+      line-height: rem(16);
+      display: flex;
+      align-items: center;
+      padding-left: rem(12);
+      &::placeholder {
+        color: #B7BAC1;
+      }
+      &:hover {
+        border: 1px solid #5C87DB;
+        color: #5C5C5C;
+      }
+      &:focus {
+        border: 1px solid #5C87DB;
+        color: #5C5C5C;
+        outline: none;
+      }
+      /*А так убрать*/
+      &::-webkit-calendar-picker-indicator {
+        margin-left: 100px;
+      }
+    }
+    // ::-webkit-calendar-picker-indicator {
+    // filter: invert(1);
+// }
+  }
+}

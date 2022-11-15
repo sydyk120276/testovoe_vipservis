@@ -1,0 +1,24 @@
+ @use "sass:math";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+@function rem($px) {
+  $result: math.div($px, 16) + rem;
+  @return $result;
+}
+
+body {
+font-weight: 500;
+margin: 0;
+padding: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  // overflow: hidden;
+}
+
+@import "../src/Avia/avia.scss";
+@import "../src/AviaInfo/aviainfo.scss";
