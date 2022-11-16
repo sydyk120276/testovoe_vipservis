@@ -93,11 +93,13 @@
       background: #FFFFFF;
       border: 1px solid #B7BAC1;
       border-radius: 10px;
+      cursor: pointer;
     }
     .active {
       background: #DDE3EE;
       border-radius: 10px;
       padding: rem(10) rem(15);
+      border: none;
     }
   }
 }

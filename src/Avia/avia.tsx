@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { FC, ChangeEvent } from 'react'
 import { Link } from 'react-router-dom';
 
-const Avia = () => {
+interface AviaInfoProps {
+  onSityNameDeparture: (e: ChangeEvent<HTMLInputElement>) => void;
+  onSityNameArrival: (e: ChangeEvent<HTMLInputElement>) => void;
+  onDateDeparture: (e: ChangeEvent<HTMLInputElement>) => void;
+  onDateArrival: (e: ChangeEvent<HTMLInputElement>) => void;
+}
+
+const Avia: FC<AviaInfoProps> = ({ onSityNameDeparture, onSityNameArrival, onDateDeparture, onDateArrival }) => {
   return (
     <div className="avia">
       <div className="avia__container">
@@ -13,6 +20,7 @@ const Avia = () => {
                 type="text"
                 className="content__input--sity-departure"
                 placeholder="Город вылета"
+                onChange={onSityNameDeparture}
               />
             </div>
             <div className="avia-inputs__content content">
@@ -21,6 +29,7 @@ const Avia = () => {
                 type="text"
                 className="content__input--sity-arrival"
                 placeholder="Город прилёта"
+                onChange={onSityNameArrival}
               />
             </div>
             <div className="avia-inputs__content content">
@@ -29,6 +38,7 @@ const Avia = () => {
                 type="date"
                 className="content__input--date-departure"
                 placeholder="дд.мм.гг"
+                onChange={onDateDeparture}
               />
             </div>
             {/* <span></span> */}
@@ -38,6 +48,7 @@ const Avia = () => {
                 type="date"
                 className="content__input--date-arrival"
                 placeholder="дд.мм.гг"
+                onChange={onDateArrival}
               />
               {/* <svg
                 width="16"
