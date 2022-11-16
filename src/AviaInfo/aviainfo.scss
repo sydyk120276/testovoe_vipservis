@@ -1,10 +1,8 @@
 .aviainfo {
   display: flex;
   justify-content: center;
-  background: red;
     &__container {
       width: rem(1200);
-      background: blue;
       display: flex;
       justify-content: center;
     }
@@ -18,8 +16,20 @@
     }
     &__body {
     }
+    &__price {
+      display: flex;
+      padding-left: rem(50);
+      align-items: center;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: rem(32);
+      line-height: rem(38);
+      color: #232323;
+    }
 }
 .flight-plan {
+  padding-top: rem(30);
   display: flex;
     &__departure-date {
       display: flex;
@@ -29,4 +39,91 @@
       display: flex;
       flex-direction: column;
     }
+    &__scheme {
+      padding: 0 rem(30);
+      text-align: center;
+      &-group-img {
+        padding-bottom: rem(8);
+      }
+    }
+    &__icons-baggage {
+      padding: 0 rem(30);
+      margin-top: rem(-30);
+      // img {
+      //   height: rem(80);
+      // }
+    }
+}
+.status-aviainfo {
+  text-decoration: none;
+  &__promo {
+    text-align: center;
+    padding: rem(6) rem(23);
+    background: #8BA5D8;
+    border-radius: 15px 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: rem(12);
+    line-height: rem(14);
+    color: #FFFFFF;
+  }
+  &__logotype {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(8);
+    padding-top: rem(28);
+    &-logo {
+      width: rem(39);
+    }
+    &-logo-text {
+      width: rem(86);
+    }
+  }
+}  
+.body-aviainfo {
+  padding-left: rem(25);
+  &__times {
+    display: flex;
+    gap: rem(20);
+    &-button {
+      padding: rem(6);
+      box-sizing: border-box;
+      background: #FFFFFF;
+      border: 1px solid #B7BAC1;
+      border-radius: 10px;
+    }
+    .active {
+      background: #DDE3EE;
+      border-radius: 10px;
+      padding: rem(10) rem(15);
+    }
+  }
+}
+.time {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: rem(24);
+  line-height: rem(28);
+  text-align: center;
+  color: #232323;
+  padding-bottom: rem(8);
+}
+.sity-name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(14);
+  line-height: rem(16);
+  color: #5C5C5C;
+}
+.date {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(14);
+  line-height: rem(16);
+  color: #5C5C5C;
 }
